@@ -1,0 +1,21 @@
+==20599== Memcheck, a memory error detector for x86-linux.
+==20599== Copyright (C) 2002-2004, and GNU GPL'd, by Julian Seward et al.
+==20599== Using valgrind-2.2.0, a program supervision framework for x86-linux.
+==20599== Copyright (C) 2000-2004, and GNU GPL'd, by Julian Seward et al.
+==20599== 
+==20599== My PID = 20599, parent PID = 20598.  Prog and args are:
+==20599==    ../bin/server.out
+==20599== For more details, rerun with: -v
+==20599== 
+==21811== 
+==21811== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==21811== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==21811== malloc/free: 5 allocs, 5 frees, 443 bytes allocated.
+==21811== For counts of detected errors, rerun with: -v
+==21811== No malloc'd blocks -- no leaks are possible.
+==20599== 
+==20599== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==20599== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==20599== malloc/free: 7 allocs, 7 frees, 824 bytes allocated.
+==20599== For counts of detected errors, rerun with: -v
+==20599== No malloc'd blocks -- no leaks are possible.

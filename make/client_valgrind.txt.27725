@@ -1,0 +1,19 @@
+==27725== Memcheck, a memory error detector.
+==27725== Copyright (C) 2002-2005, and GNU GPL'd, by Julian Seward et al.
+==27725== Using LibVEX rev 1575, a library for dynamic binary translation.
+==27725== Copyright (C) 2004-2005, and GNU GPL'd, by OpenWorks LLP.
+==27725== Using valgrind-3.1.1, a dynamic binary instrumentation framework.
+==27725== Copyright (C) 2000-2005, and GNU GPL'd, by Julian Seward et al.
+==27725== For more details, rerun with: -v
+==27725== 
+==27725== My PID = 27725, parent PID = 27724.  Prog and args are:
+==27725==    ../bin/client.out
+==27725==    10.203.161.16
+==27725==    1234
+==27725== 
+==27725== 
+==27725== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 1)
+==27725== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==27725== malloc/free: 3 allocs, 3 frees, 66 bytes allocated.
+==27725== For counts of detected errors, rerun with: -v
+==27725== All heap blocks were freed -- no leaks are possible.

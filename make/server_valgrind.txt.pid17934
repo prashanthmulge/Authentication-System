@@ -1,0 +1,15 @@
+==17934== Memcheck, a memory error detector for x86-linux.
+==17934== Copyright (C) 2002-2004, and GNU GPL'd, by Julian Seward et al.
+==17934== Using valgrind-2.2.0, a program supervision framework for x86-linux.
+==17934== Copyright (C) 2000-2004, and GNU GPL'd, by Julian Seward et al.
+==17934== 
+==17934== My PID = 17934, parent PID = 17932.  Prog and args are:
+==17934==    ../bin/server.out
+==17934== For more details, rerun with: -v
+==17934== 
+==17934== 
+==17934== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==17934== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==17934== malloc/free: 7 allocs, 7 frees, 824 bytes allocated.
+==17934== For counts of detected errors, rerun with: -v
+==17934== No malloc'd blocks -- no leaks are possible.

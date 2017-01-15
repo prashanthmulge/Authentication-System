@@ -1,0 +1,15 @@
+==15138== Memcheck, a memory error detector for x86-linux.
+==15138== Copyright (C) 2002-2004, and GNU GPL'd, by Julian Seward et al.
+==15138== Using valgrind-2.2.0, a program supervision framework for x86-linux.
+==15138== Copyright (C) 2000-2004, and GNU GPL'd, by Julian Seward et al.
+==15138== 
+==15138== My PID = 15138, parent PID = 15136.  Prog and args are:
+==15138==    ../bin/server.out
+==15138== For more details, rerun with: -v
+==15138== 
+==15138== 
+==15138== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==15138== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==15138== malloc/free: 7 allocs, 7 frees, 824 bytes allocated.
+==15138== For counts of detected errors, rerun with: -v
+==15138== No malloc'd blocks -- no leaks are possible.

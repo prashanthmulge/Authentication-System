@@ -1,0 +1,21 @@
+==24343== Memcheck, a memory error detector for x86-linux.
+==24343== Copyright (C) 2002-2004, and GNU GPL'd, by Julian Seward et al.
+==24343== Using valgrind-2.2.0, a program supervision framework for x86-linux.
+==24343== Copyright (C) 2000-2004, and GNU GPL'd, by Julian Seward et al.
+==24343== 
+==24343== My PID = 24343, parent PID = 24340.  Prog and args are:
+==24343==    ../bin/server.out
+==24343== For more details, rerun with: -v
+==24343== 
+==24941== 
+==24941== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==24941== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==24941== malloc/free: 229 allocs, 229 frees, 8959 bytes allocated.
+==24941== For counts of detected errors, rerun with: -v
+==24941== No malloc'd blocks -- no leaks are possible.
+==24343== 
+==24343== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==24343== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==24343== malloc/free: 7 allocs, 7 frees, 824 bytes allocated.
+==24343== For counts of detected errors, rerun with: -v
+==24343== No malloc'd blocks -- no leaks are possible.

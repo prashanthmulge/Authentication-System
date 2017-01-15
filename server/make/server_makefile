@@ -1,0 +1,28 @@
+# Macros defined
+CC = gcc
+FLAGS = -c -Wall -g -DTRACE -o 
+OUT = ../bin
+OBJ = ../obj
+SRC = ../src
+INC = ../include
+
+$(OUT)/server.out: $(OBJ)/server_interface.o $(OBJ)/server_implement.o $(OBJ)/server_error_function.o
+	$(CC) -o $(OUT)/server.out $(OBJ)/server_interface.o $(OBJ)/server_implement.o $(OBJ)/server_error_function.o
+
+$(OBJ)/server_interface.o: $(SRC)/server_interface.c
+	$(CC) $(FLAGS) $(OBJ)/server_interface.o $(SRC)/server_interface.c -I $(INC)
+
+$(OBJ)/server_implement.o: $(SRC)/server_implement.c
+	$(CC) $(FLAGS) $(OBJ)/server_implement.o $(SRC)/server_implement.c -I $(INC)
+
+$(OBJ)/server_error_function.o: $(SRC)/server_error_function.c
+	$(CC) $(FLAGS) $(OBJ)/server_error_function.o $(SRC)/server_error_function.c -I $(INC)
+
+clean:
+	rm $(OUT)/server.out $(OBJ)/*
+
+run: $(OUT)/server.out
+	$(OUT)/server.out
+
+valgrind:
+	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --log-file=server_valgrind.txt $(OUT)/server.out

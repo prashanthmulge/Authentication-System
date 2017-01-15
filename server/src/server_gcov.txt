@@ -1,0 +1,12 @@
+File `server_implement.c'
+Lines executed:83.99% of 306
+server_implement.c:creating `server_implement.c.gcov'
+
+File `server_interface.c'
+Lines executed:77.55% of 49
+server_interface.c:creating `server_interface.c.gcov'
+
+File `error_function.c'
+Lines executed:0.00% of 99
+error_function.c:creating `error_function.c.gcov'
+

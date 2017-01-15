@@ -1,0 +1,12 @@
+File `client_implement.c'
+Lines executed:92.00% of 225
+client_implement.c:creating `client_implement.c.gcov'
+
+File `client_interface.c'
+Lines executed:95.24% of 42
+client_interface.c:creating `client_interface.c.gcov'
+
+File `error_function.c'
+Lines executed:37.37% of 99
+error_function.c:creating `error_function.c.gcov'
+

@@ -1,0 +1,28 @@
+# Macros defined
+CC = gcc
+FLAGS = -c -Wall -g -DTRACE -o
+OUT = ../bin
+OBJ = ../obj
+SRC = ../src
+INC = ../include
+
+$(OUT)/client.out: $(OBJ)/client_interface.o $(OBJ)/client_implement.o $(OBJ)/client_error_function.o
+	$(CC) -o $(OUT)/client.out $(OBJ)/client_interface.o $(OBJ)/client_implement.o $(OBJ)/client_error_function.o
+
+$(OBJ)/client_interface.o: $(SRC)/client_interface.c
+	$(CC) $(FLAGS) $(OBJ)/client_interface.o $(SRC)/client_interface.c -I $(INC)
+
+$(OBJ)/client_implement.o: $(SRC)/client_implement.c
+	$(CC) $(FLAGS) $(OBJ)/client_implement.o $(SRC)/client_implement.c -I $(INC)
+
+$(OBJ)/client_error_function.o: $(SRC)/client_error_function.c
+	$(CC) $(FLAGS) $(OBJ)/client_error_function.o $(SRC)/client_error_function.c -I $(INC)
+
+clean:
+	rm $(OUT)/client.out $(OBJ)/*
+
+run: $(OUT)/client.out
+	$(OUT)/client.out 10.203.161.7 1234
+
+valgrind:
+	valgrind --tool=memcheck --log-file=client_valgrind.txt --leak-check=yes --show-reachable=yes $(OUT)/client.out 10.203.161.7 1234

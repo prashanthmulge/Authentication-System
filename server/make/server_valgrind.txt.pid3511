@@ -1,0 +1,15 @@
+==3511== Memcheck, a memory error detector for x86-linux.
+==3511== Copyright (C) 2002-2004, and GNU GPL'd, by Julian Seward et al.
+==3511== Using valgrind-2.2.0, a program supervision framework for x86-linux.
+==3511== Copyright (C) 2000-2004, and GNU GPL'd, by Julian Seward et al.
+==3511== 
+==3511== My PID = 3511, parent PID = 3510.  Prog and args are:
+==3511==    ../bin/server.out
+==3511== For more details, rerun with: -v
+==3511== 
+==3511== 
+==3511== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 12 from 1)
+==3511== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==3511== malloc/free: 7 allocs, 7 frees, 824 bytes allocated.
+==3511== For counts of detected errors, rerun with: -v
+==3511== No malloc'd blocks -- no leaks are possible.
